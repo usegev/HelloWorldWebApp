@@ -1,8 +1,8 @@
 #!/usr/bin/env python
  
 import textwrap
- 
-from six.moves.BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+
+from http.server import BaseHTTPRequestHandler, HTTPServer
  
  
 class HelloRequestHandler(BaseHTTPRequestHandler):
