@@ -8,6 +8,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 class HelloRequestHandler(BaseHTTPRequestHandler):
  
     def do_GET(self):
+        print('Handling Get ', self.path)
         if self.path != '/':
             self.send_error(404, "Object not found")
             return
@@ -20,7 +21,7 @@ class HelloRequestHandler(BaseHTTPRequestHandler):
                 <title>Hello World</title>
             </head>
             <body>
-                <h1>Good morning, World!</h1>
+                <h1>Hello, World!</h1>
                 <p>... Here we are!</p>
             </body>
             </html>
