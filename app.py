@@ -18,7 +18,7 @@ class HelloRequestHandler(BaseHTTPRequestHandler):
         response_text = textwrap.dedent('''\
             <html>
             <head>
-                <title>Hello World</title>
+                <title>Hello, World</title>
             </head>
             <body>
                 <h1>Hello, World!</h1>
